@@ -1,0 +1,13 @@
+.app-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 36px;
+    gap: 10px;
+    color: #fff;
+    background: #007298;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin: 0 0 0 16px;
+}
