@@ -1,9 +1,15 @@
 .app-course {
     display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.app-course__body {
+    display: flex;
     gap: 40px;
 }
 
-.app-course__content-column {
+.app-course__body__description {
     flex: 2;
 }
 
@@ -19,8 +25,4 @@
 .app-course__metadata__actions {
     display: flex;
     gap: 12px;
-}
-
-.app-course__name {
-    margin: 0 0 25px 0;
 }
