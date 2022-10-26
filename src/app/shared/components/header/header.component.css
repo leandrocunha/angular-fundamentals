@@ -1,9 +1,21 @@
 .app-header {
-    align-items: center;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
     display: flex;
     height: 80px;
+}
+
+.app-header__container {
+    align-items: center;
+    display: flex;
     justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.app-header__logo {
+    margin: 0;
+    padding: 0;
 }
 
 .app-header__login-area {
