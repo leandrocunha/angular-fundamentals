@@ -21,7 +21,7 @@
 .app-header__login-area {
     align-items: center;
     display: flex;
-    gap: 100px;
+    gap: 25px;
 }
 
 .app-header__login-area__username {
