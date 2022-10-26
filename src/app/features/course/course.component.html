@@ -1,18 +1,24 @@
-<h2>{{item.title}}</h2>
-<p>{{item.description}}</p>
-<ul>
-    <li><strong>Created:</strong> {{item.creationDate}}</li>
-    <li><strong>Duration:</strong> {{item.duration}}</li>
-    <li><strong>Authors:</strong> {{item.authors}}</li>
-</ul>
-<div class="course-actions">
-    <app-button>
-        Show course
-    </app-button>
-    <app-button>
-        <fa-icon [icon]="faTrashCan"></fa-icon>
-    </app-button>
-    <app-button>
-        <fa-icon [icon]="faPencil"></fa-icon>
-    </app-button>
+<div class="app-course">
+    <div class="app-course__content-column">
+        <h2 class="app-course__name">{{item.title}}</h2>
+        <p>{{item.description}}</p>
+    </div>
+    <div class="app-course__metadata-column">
+        <ul class="app-course__metadata__items">
+            <li><strong>Created:</strong> {{item.creationDate}}</li>
+            <li><strong>Duration:</strong> {{item.duration}}</li>
+            <li><strong>Authors:</strong> {{item.authors}}</li>
+        </ul>
+        <div class="app-course__metadata__actions">
+            <app-button>
+                Show course
+            </app-button>
+            <app-button>
+                <fa-icon [icon]="faTrashCan"></fa-icon>
+            </app-button>
+            <app-button>
+                <fa-icon [icon]="faPencil"></fa-icon>
+            </app-button>
+        </div>
+    </div>
 </div>
