@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Course } from 'src/mocks/courses';
+import { faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-course',
@@ -15,6 +16,9 @@ export class CourseComponent implements OnInit {
     duration: 0,
     authors: [],
   };
+
+  faTrashCan = faTrashCan;
+  faPencil = faPencil;
 
   constructor() {}
 

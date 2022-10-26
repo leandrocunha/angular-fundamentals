@@ -9,6 +9,7 @@ import { CourseComponent } from './features/course/course.component';
 import { CoursesModule } from './features/courses/courses.module';
 import { CourseCardComponent } from './features/course-card/course-card.component';
 import { CourseListComponent } from './features/course-list/course-list.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CourseListComponent } from './features/course-list/course-list.componen
     CourseCardComponent,
     CourseListComponent,
   ],
-  imports: [BrowserModule, CoursesModule],
+  imports: [BrowserModule, CoursesModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

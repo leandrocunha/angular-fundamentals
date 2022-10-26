@@ -2,8 +2,10 @@
     <div class="app-header__container">
         <h1 class="app-header__logo"><img src="./assets/courses_logo.svg" /></h1>
         <div class="app-header__login-area">
-            <p>Harry Potter</p>
-            <app-button></app-button>
+            <ng-content></ng-content>
+            <app-button>
+                Logout
+            </app-button>
         </div>
     </div>
 </header>
