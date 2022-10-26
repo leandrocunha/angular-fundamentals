@@ -14,10 +14,15 @@
 }
 
 .app-header__logo {
+    display: inherit;
     margin: 0;
     padding: 0;
 }
 
 .app-header__login-area {
     display: flex;
+}
+
+.app-header__login-area__username {
+    font-weight: 600;
 }
