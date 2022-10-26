@@ -1,0 +1,8 @@
+.app-course-card {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-left: 12px solid #29323A;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0 55px 0;
+    padding: 43px;
+}
