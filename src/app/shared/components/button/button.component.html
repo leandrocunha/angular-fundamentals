@@ -1,6 +1,7 @@
 <button
     [ngClass]="!type ? 'app-button' : 'app-button app-button--icon'"
     type="button"
+    (click)="handleOnClick()"
 >
     <ng-content></ng-content>
 </button>

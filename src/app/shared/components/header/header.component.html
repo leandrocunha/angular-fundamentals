@@ -2,11 +2,11 @@
     <div class="container">
         <h1 class="app-header__logo"><img src="./assets/courses_logo.svg" /></h1>
         <div class="app-header__login-area">
-            <p class="app-header__login-area__username">
+            <p *ngIf="isLogin" class="app-header__login-area__username">
                 <ng-content></ng-content>
             </p>
-            <app-button>
-                Logout
+            <app-button (onClick)="handleOnClick()">
+                {{isLogin ? 'Logout' : 'Login'}}
             </app-button>
         </div>
     </div>
