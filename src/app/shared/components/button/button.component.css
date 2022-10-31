@@ -14,6 +14,18 @@
     text-transform: uppercase;
 }
 
+.app-button:hover {
+    background-color: #025b78;
+}
+
+.app-button:focus {
+    background-color: #008ebd;
+}
+
+.app-button:active {
+    background-color: #0097c9;
+}
+
 .app-button--icon {
     padding-left: 20px;
     padding-right: 20px;
