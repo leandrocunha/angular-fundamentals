@@ -8,6 +8,9 @@ import { Course, mockedCourseList } from '../../../mocks/courses';
 })
 export class CourseListComponent implements OnInit {
   public courses: Course[];
+  public emptyTitle: string = 'Your List Is Empty';
+  public emptyMessage: string =
+    'Please use "Add New Course" button to add your first course';
 
   constructor() {
     this.courses = mockedCourseList;

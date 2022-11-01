@@ -1,0 +1,14 @@
+.app-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-info__title {
+    font-size: 32px;
+    margin: 0 0 24px 0;
+}
+
+.app-info__button {
+    margin: 40px 0 0 0;
+}
