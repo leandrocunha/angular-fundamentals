@@ -6,10 +6,14 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent implements OnInit {
-  @Input() type: string | null = null;
+  @Input() renderType: 'label' | 'icon';
+  @Input() type: 'button' | 'submit';
   @Output() onClick = new EventEmitter<boolean>();
 
-  constructor() {}
+  constructor() {
+    this.renderType = 'label';
+    this.type = 'button';
+  }
 
   handleOnClick() {
     this.onClick.emit();

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './features/login/login.component';
@@ -21,7 +22,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CourseCardComponent,
     CourseListComponent,
   ],
-  imports: [BrowserModule, CoursesModule, FontAwesomeModule],
+  imports: [BrowserModule, CoursesModule, FontAwesomeModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,55 @@
+.app-login {
+    padding: 100px 0 0;
+}
+
+.app-login__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 585px;
+}
+
+.app-login__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 36px;
+}
+
+.app-login__form {
+    background-color: #fff;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 46px 150px;
+}
+
+.app-login__form__label {
+    color: #333E48;  
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.app-login__form__input {
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    margin: 0 0 34px;
+    padding: 13px 16px;
+}
+
+.app-login__form__button {
+    align-self: center;
+    margin: 0 0 34px;
+}
+
+.app-login__form__register {
+    text-align: center;
+}
+
+.app-login__form__form-group {
+    display: flex;
+    flex-direction: column;
+}

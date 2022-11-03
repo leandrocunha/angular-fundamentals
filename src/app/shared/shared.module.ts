@@ -6,6 +6,7 @@ import {
   InfoComponent,
   ModalComponent,
 } from './components';
+import { EmailValidatorDirective } from './directives/email-validator.directive';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import {
     ButtonComponent,
     InfoComponent,
     ModalComponent,
+    EmailValidatorDirective,
   ],
   imports: [CommonModule],
   exports: [HeaderComponent, ButtonComponent, InfoComponent, ModalComponent],
