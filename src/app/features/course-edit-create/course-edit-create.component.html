@@ -1,0 +1,43 @@
+<div class="app-course-edit-create">
+    <div class="container">
+        <div class="app-course-edit-create__wrapper">
+            <h2 class="app-course-edit-create__title">Course Edit/Create Page</h2>
+            <div class="app-course-edit-create__form">
+                <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                    <div class="app-course-edit-create__form__form-group">
+                        <label class="app-course-edit-create__form__label">Title</label>
+                        <input class="app-course-edit-create__form__input" formControlName="title" name="title" type="text" required />
+                        <div *ngIf="form.get('title')?.hasError('pattern')" class="app-course-edit-create__form__error">
+                            Title is required
+                        </div>
+                    </div>
+                    <div class="app-course-edit-create__form__form-group">
+                        <label class="app-course-edit-create__form__label">Description</label>
+                        <textarea class="app-course-edit-create__form__input" formControlName="description" name="description" required></textarea>
+                        <div *ngIf="form.get('description')?.hasError('pattern')" class="app-course-edit-create__form__error">
+                            Description  is required
+                        </div>
+                    </div>
+                    <div class="app-course-edit-create__form__form-group">
+                        <label class="app-course-edit-create__form__label">Author Name</label>
+                        <input class="app-course-edit-create__form__input" formControlName="authorName" name="authorName" type="text" required />
+                        <div *ngIf="form.get('authorName')?.hasError('pattern')" class="app-course-edit-create__form__error">
+                            Author Name is required
+                        </div>
+                    </div>
+                    <div class="app-course-edit-create__form__form-group">
+                        <label class="app-course-edit-create__form__label">Duration</label>
+                        <input class="app-course-edit-create__form__input" formControlName="duration" name="duration" type="text" required />
+                        <div *ngIf="form.get('duration')?.hasError('pattern')" class="app-course-edit-create__form__error">
+                            Duration is required
+                        </div>
+                    </div>
+                    <div class="app-course-edit-create__form__form-group app-course-edit-create__form__form-group--button-group">
+                        <app-button type="button" [disabled]="!form.valid">Cancel</app-button>
+                        <app-button type="submit" [disabled]="!form.valid">Create Course</app-button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

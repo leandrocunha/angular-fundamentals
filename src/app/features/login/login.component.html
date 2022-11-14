@@ -6,23 +6,29 @@
                 <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)">
                     <div class="app-login__form__form-group">
                         <label class="app-login__form__label">Login:</label>
-                        <input class="app-login__form__input" name="email" type="text" #email="ngModel" required ngModel appEmailValidator />
-                        <div *ngIf="email.invalid && (email.touched)" class="alert">
-                            <div *ngIf="email.errors?.['required']">
+                        <input
+                            class="app-login__form__input"
+                            name="email"
+                            type="text"
+                            #email="ngModel" required ngModel appEmailValidator />
+                        <div *ngIf="email.invalid && (email.touched)" class="app-login__form__error">
+                            <p *ngIf="email.errors?.['required']">
                                 Email is required.
-                            </div>
+                            </p>
                         </div>
                     </div>
                     <div class="app-login__form__form-group">
                         <label class="app-login__form__label">Password:</label>
                         <input class="app-login__form__input" name="password" type="password" #password="ngModel" required ngModel />
-                        <div *ngIf="password.invalid && (email.touched)" class="alert">
-                            <div *ngIf="password.errors?.['required']">
+                        <div *ngIf="password.invalid && (email.touched)" class="app-login__form__error">
+                            <p *ngIf="password.errors?.['required']">
                                 Password is required.
-                            </div>
+                            </p>
                         </div>
                     </div>
-                    <app-button class="app-login__form__button" type="submit">Login</app-button>
+                    <div class="app-login__form__form-group">
+                        <app-button appearance="full-width" type="submit">Login</app-button>
+                    </div>
                     <p class="app-login__form__register">If you don't have an account you may <strong>Registration</strong></p>
                 </form>
             </div>

@@ -1,14 +1,15 @@
-.app-registration {
+.app-course-edit-create {
     padding: 100px 0 0;
 }
 
-.app-registration__title {
+.app-course-edit-create__title {
+    align-self: center;
     font-size: 32px;
     line-height: 40px;
     margin: 0 0 36px;
 }
 
-.app-registration__form {
+.app-course-edit-create__form {
     background-color: #fff;
     border: 1px solid #CFCFCF;
     border-radius: 4px;
@@ -17,28 +18,32 @@
     padding: 46px 150px;
 }
 
-.app-registration__wrapper {
-    align-items: center;
+.app-course-edit-create__wrapper {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 585px;
 }
 
-.app-registration__form__form-group {
+.app-course-edit-create__form__form-group {
     display: flex;
     margin: 0 0 34px;
     flex-direction: column;
 }
 
-.app-registration__form__label {
+.app-course-edit-create__form__form-group--button-group {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.app-course-edit-create__form__label {
     color: #333E48;  
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
 }
 
-.app-registration__form__input {
+.app-course-edit-create__form__input {
     background: #FFFFFF;
     border: 1px solid #CFCFCF;
     border-radius: 4px;
@@ -46,15 +51,15 @@
     padding: 13px 16px;
 }
 
-.app-registration__form__input:focus,
-.app-registration__form__input:focus-visible {
+.app-course-edit-create__form__input:focus,
+.app-course-edit-create__form__input:focus-visible {
     outline: none;
 }
 
-.app-registration__form__input.ng-invalid {
+.app-course-edit-create__form__input.ng-invalid {
     border-color: #FF0000;
 }
 
-.app-registration__form__error {
+.app-course-edit-create__form__error {
     color: #FF0000;
 }

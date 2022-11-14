@@ -5,8 +5,11 @@ import {
   HeaderComponent,
   InfoComponent,
   ModalComponent,
+  SearchComponent,
 } from './components';
 import { EmailValidatorDirective } from './directives/email-validator.directive';
+import { DurationPipe } from './pipes/duration.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,8 +18,18 @@ import { EmailValidatorDirective } from './directives/email-validator.directive'
     InfoComponent,
     ModalComponent,
     EmailValidatorDirective,
+    DurationPipe,
+    SearchComponent,
   ],
-  imports: [CommonModule],
-  exports: [HeaderComponent, ButtonComponent, InfoComponent, ModalComponent],
+  imports: [CommonModule, FormsModule],
+  exports: [
+    ButtonComponent,
+    DurationPipe,
+    EmailValidatorDirective,
+    HeaderComponent,
+    InfoComponent,
+    ModalComponent,
+    SearchComponent,
+  ],
 })
 export class SharedModule {}

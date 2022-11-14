@@ -25,6 +25,16 @@
     padding: 46px 150px;
 }
 
+.app-login__form__form-group {
+    display: flex;
+    margin: 0 0 34px;
+    flex-direction: column;
+}
+
+.app-login__form__error {
+    color: #FF0000;
+}
+
 .app-login__form__label {
     color: #333E48;  
     font-size: 16px;
@@ -36,20 +46,19 @@
     background: #FFFFFF;
     border: 1px solid #CFCFCF;
     border-radius: 4px;
-    margin: 0 0 34px;
+    margin: 0;
     padding: 13px 16px;
 }
 
-.app-login__form__button {
-    align-self: center;
-    margin: 0 0 34px;
+.app-login__form__input:focus,
+.app-login__form__input:focus-visible {
+    outline: none;
+}
+
+.app-login__form__input.ng-invalid {
+    border-color: #FF0000;
 }
 
 .app-login__form__register {
     text-align: center;
-}
-
-.app-login__form__form-group {
-    display: flex;
-    flex-direction: column;
 }

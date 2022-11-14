@@ -1,5 +1,6 @@
 <button
-    [ngClass]="!renderType ? 'app-button' : 'app-button app-button--icon'"
+    [disabled]="disabled"
+    [ngClass]="composedClass"
     [type]="type"
     (click)="handleOnClick()"
 >
