@@ -1,0 +1,12 @@
+<div class="app-search">
+    <div class="container">
+        <form #searchForm="ngForm" class="app-search__form" (ngSubmit)="onSubmit(searchForm.value)">
+            <div class="app-search__form-group app-search__form-group--input">
+                <input class="app-search__form__input" name="search" placeholder="{{placeholder}}" type="text" #search="ngModel" required ngModel />
+            </div>
+            <div class="app-search__form-group">
+                <app-button>Search</app-button>
+            </div>
+        </form>
+    </div>
+</div>

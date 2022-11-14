@@ -1,1 +1,36 @@
-<p>registration works!</p>
+<div class="app-registration">
+    <div class="container">
+        <div class="app-registration__wrapper">
+            <h2 class="app-registration__title">Registration</h2>
+            <div class="app-registration__form">
+                <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                    <div class="app-registration__form__form-group">
+                        <label class="app-registration__form__label">Name</label>
+                        <input class="app-registration__form__input" formControlName="name" name="name" type="text" required />
+                        <div *ngIf="form.get('name')?.hasError('pattern')" class="app-registration__form__error">
+                            Name is required
+                        </div>
+                    </div>
+                    <div class="app-registration__form__form-group">
+                        <label class="app-registration__form__label">Email</label>
+                        <input class="app-registration__form__input" formControlName="email" name="email" type="text" required />
+                        <div *ngIf="form.get('email')?.hasError('email')" class="app-registration__form__error">
+                            Email is required
+                        </div>
+                    </div>
+                    <div class="app-registration__form__form-group">
+                        <label class="app-registration__form__label">Password</label>
+                        <input class="app-registration__form__input" formControlName="password" name="password" type="password" required />
+                        <div *ngIf="form.get('password')?.hasError('password')" class="app-registration__form__error">
+                            Password is required
+                        </div>
+                    </div>
+                    <div class="app-registration__form__form-group">
+                        <app-button appearance="full-width" type="submit" [disabled]="!form.valid">Login</app-button>
+                    </div>
+                    <p>If you an account you may <strong>Login</strong></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

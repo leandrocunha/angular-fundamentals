@@ -1,0 +1,23 @@
+.app-search__form {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    gap: 16px;
+    display: flex;
+    padding: 46px 150px;
+}
+
+
+.app-search__form__input {
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    margin: 0;
+    padding: 13px 16px;
+    width: 100%;
+}
+
+.app-search__form-group--input {
+    flex: 1;
+}
