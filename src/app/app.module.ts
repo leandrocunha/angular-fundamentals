@@ -13,6 +13,7 @@ import { CourseListComponent } from './features/course-list/course-list.componen
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CourseEditCreateComponent } from './features/course-edit-create/course-edit-create.component';
 import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SharedModule } from './shared/shared.module';
     CourseEditCreateComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     CoursesModule,
     FontAwesomeModule,
