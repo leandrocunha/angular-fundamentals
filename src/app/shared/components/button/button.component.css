@@ -30,3 +30,12 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.app-button--full-width {
+    width: 100%;
+}
+
+.app-button:disabled {
+    background-color: #025b78;
+    cursor: default;
+}
