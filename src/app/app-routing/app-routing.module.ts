@@ -5,7 +5,7 @@ import { CoursesComponent } from '../features/courses/courses.component';
 //import { RegistrationComponent } from '../features/registration/registration.component';
 
 const appRoutes: Route[] = [
-/*  {
+  /*  {
     path: 'login',
     loadChildren: () =>
       import('../features/login/login.module').then((m) => m.LoginModule),
@@ -24,7 +24,8 @@ const appRoutes: Route[] = [
   },*/
   {
     path: '',
-    component: CoursesComponent,
+    loadChildren: () =>
+      import('../features/courses/courses.module').then((m) => m.CoursesModule),
   },
 ];
 
